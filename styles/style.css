@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: "Space Grotesk", sans-serif;
+  overflow-x: hidden;
 }
 
 nav {
@@ -13,18 +14,19 @@ nav {
   justify-content: space-between;
   list-style: none;
   color: #0000ff;
-  background-color: rgba(245, 244, 243, 0.623);
+  /* background-color: rgba(245, 244, 243, 0.623); */
+  background-color: transparent;
 }
 
 .logo {
   font-size: 30px;
+  transition: all 0.1s ease-in-out;
+
 }
-.logo:hover {
-  color: rgba(83, 83, 231, 0.849);
-  text-shadow: 0 0 10px rgba(0, 0, 255, 0.8), 0 0 20px rgba(91, 91, 223, 0.425),
-    0 0 30px rgba(124, 124, 248, 0.8), 0 0 40px rgba(61, 61, 241, 0.377),
-    0 0 70px rgba(80, 80, 255, 0.8), 0 0 80px rgba(0, 132, 255, 0.8),
-    0 0 100px rgba(112, 112, 170, 0.8), 0 0 150px rgba(0, 0, 255, 0.8);
+.logo:hover{
+  color: #00f;
+  font-size: 34px;
+  text-shadow: 0 0 18px rgba(0, 0, 255, 0.8);
 }
 /* NAV SECTION */
 
@@ -36,16 +38,17 @@ nav ul {
 nav a {
   margin: 0px 30px;
   color: #0000ff;
+  transition: all 0.1s ease-in-out;
   text-decoration: none;
+  font-weight: 600;
 }
 
 nav ul a:hover {
-  padding: 10px 15px;
-  position: relative;
-  background-color: #0000ff;
-  box-shadow: 20px 10px 10px #5151bba4;
-  color: #ffffff;
-  font-weight: 600;
+  color: #0000ff;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: underline;
+ 
 }
 
 header {
@@ -95,7 +98,7 @@ header {
 .hire-me-btn:hover {
   font-size: 16px;
   background-color: #0000c5;
-  box-shadow: 30px 15px 15px #5151bba4;
+  box-shadow: 30px 10px 10px #1313c199;
 }
 
 /* SKILLS-SECTION */
@@ -110,7 +113,7 @@ header {
   align-items: center;
 }
 
-p > a {
+p>a {
   text-decoration: none;
 }
 
@@ -138,27 +141,29 @@ p > a {
 }
 
 /* MESSAGE SECTION */
+
 .message-container {
-  /* height: 100vh;
-     */
   height: auto;
-  /* width: 100vw; */
   width: auto;
 }
+
 .message-title {
   margin: 150px 0px 50px;
   font-size: 45px;
   color: #0000ff;
   text-align: center;
 }
+
 .message-description {
   font-size: 30px;
   text-align: center;
 }
+
 .input-fields {
   display: flex;
   justify-content: space-evenly;
 }
+
 #name-input {
   padding: 20px 200px;
   border: none;
@@ -167,6 +172,7 @@ p > a {
   margin: 100px 40px;
   font-size: 18px;
 }
+
 #email-input {
   padding: 20px 200px;
   border: none;
@@ -175,12 +181,14 @@ p > a {
   margin: 100px 0px;
   font-size: 18px;
 }
+
 .textarea-field {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 #text-area {
   padding: 0px 200px;
   border: none;
@@ -189,6 +197,7 @@ p > a {
   margin: 50px 0px 50px;
   font-size: 18px;
 }
+
 #submit-btn {
   height: 50px;
   width: 250px;
@@ -201,6 +210,7 @@ p > a {
   cursor: pointer;
   margin-bottom: 50px;
 }
+
 #submit-btn:hover {
   font-size: 16px;
   background-color: #0000c5;
