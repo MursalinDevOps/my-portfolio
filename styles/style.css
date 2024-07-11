@@ -21,7 +21,7 @@ nav {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 18px;
   transition: all 0.1s ease-in-out;
 }
 .logo:hover{
@@ -108,8 +108,8 @@ header {
 /* SKILLS-SECTION */
 
 .skills-container {
-  /* height: 100vh;
-  width: 100vw; */
+  height: 100vh;
+  width: 100vw;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -125,26 +125,22 @@ p>a {
   transform: scale(0.9);
 }
 .section-title {
-  margin: 30px 0px 0px;
+  margin: 30px 0px;
   font-size: 45px;
   color: #0000ff;
 }
 
 .section-description {
   font-size: 20px;
-  padding: 50px 0px 100px;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
+  gap: 80px;
   margin-top: 10px;
 }
 
-.grid-item a {
-  margin: 50px;
-}
 
 /* MESSAGE SECTION */
 
@@ -154,6 +150,7 @@ p>a {
 }
 
 .message-title {
+  padding-top: 20px;
   margin: 100px 0px 50px;
   font-size: 45px;
   color: #0000ff;
@@ -244,7 +241,7 @@ p>a {
   gap: 20px;
  }
 .sidebar li{
-  text-align: start;
+  text-align: center;
   width: 100%;
 }
 .sidebar a{
@@ -278,6 +275,7 @@ text-align: center;
 }
 .footer-img-container img{
   padding-right: 24px;
+  width: 30px;
 }
 .footer-icon-container{
 display: flex;
@@ -314,9 +312,15 @@ align-items: flex-start;
   }
 }
  
-@media (max-width:400) {
+@media (max-width:767px) {
   .sidebar{
     width: 100%;
+  }
+  nav ul{
+    padding: 0;
+  }
+  .sidebar li{
+    font-size: 22px;
   }
 }
 
@@ -353,17 +357,15 @@ align-items: flex-start;
     font-weight: 700;
     font-size: 40px;
   }
-  .hire-me-btn {
+  .hire-me-btn{
     margin: 20px 0;
     height: 50px;
     width: 150px;
-    border: none;
     border-radius: 6px;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 18px;
-    background-color: #0000ff;
-    cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  background-color:transparent;
+  border-color: #0000ff;
   }
   .section-title {
     margin: 0px 0px 0px;
@@ -401,17 +403,20 @@ align-items: flex-start;
     text-align: center;
   }
   .input-fields {
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width:90% ;
     margin: 0 auto;
-
+  }
+  .input-fields input {
+    text-align: center;
+  }
+  .input-fields textarea{
+    text-align: center;
   }
   .textarea-field {
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -433,7 +438,6 @@ align-items: flex-start;
     padding:50px;
   }
   .footer-icon-container{
-    margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
