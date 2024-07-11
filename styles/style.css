@@ -15,8 +15,9 @@ nav {
   list-style: none;
   color: #0000ff;
   background-color: #f9f9f9;
-  
-  border-bottom: 1px solid blue;
+  border-bottom: 2px solid rgba(0, 0, 255, 0.174);
+  position: fixed;
+  width: 100%;
 }
 
 .logo {
@@ -32,6 +33,7 @@ nav {
 nav ul {
   display: flex;
   list-style: none;
+  padding-right: 30px;
 }
 
 nav a {
@@ -86,19 +88,21 @@ header {
   margin: 20px 100px;
   height: 50px;
   width: 150px;
-  border: none;
+  /* border: none; */
   border-radius: 6px;
-  color: #ffffff;
+  color: #0000ff;
   font-weight: bold;
   font-size: 18px;
-  background-color: #0000ff;
+  background-color:transparent;
+  border-color: #0000ff;
   cursor: pointer;
 }
 
 .hire-me-btn:hover {
   font-size: 16px;
-  background-color: #0000c5;
-  box-shadow: 30px 10px 10px #1313c199;
+  color: #ffffff;
+  background-color: #0000ff;
+  /* box-shadow: 30px 10px 10px #1313c199; */
 }
 
 /* SKILLS-SECTION */
@@ -203,20 +207,22 @@ p>a {
 #submit-btn {
   height: 50px;
   width: 250px;
-  border: none;
+  border-color:#0000ff;
   border-radius: 6px;
-  color: #ffffff;
+  color: #0000ff;
   font-weight: bold;
   font-size: 18px;
-  background-color: #0000ff;
+  background-color: transparent;
   cursor: pointer;
   margin-bottom: 100px;
 }
 
 #submit-btn:hover {
-  font-size: 16px;
-  background-color: #0000c5;
-  box-shadow: 30px 15px 15px #5151bba4;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #0000ff;
+  /* box-shadow: 30px 15px 15px #5151bba4; */
 }
 
 /* experiment */
@@ -395,22 +401,23 @@ align-items: flex-start;
     text-align: center;
   }
   .input-fields {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width:90% ;
     margin: 0 auto;
-    text-align: center;
+
   }
   .textarea-field {
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     max-width:90% ;
     margin: 0 auto;
-    text-align: center;
   }
   /*  */
   .footer-container {
