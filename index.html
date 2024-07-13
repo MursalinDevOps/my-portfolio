@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mursalin's Portfolio</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://kit.fontawesome.com/5004909c04.js" crossorigin="anonymous"></script>
   </head>
   <body>
     
@@ -14,7 +15,7 @@
 
       <!-- NAV SECTION -->
 
-      <nav>
+      <!-- <nav>
         <div class="logo">
           <h1 onclick=hideSidebar()><a href="#home">Mursalin.</a></h1>
         </div>
@@ -26,10 +27,10 @@
             <li onclick=hideSidebar()><a href="#my-skills">My Skills</a></li>
             <li onclick=hideSidebar()><a href="#message-me">Message Me</a></li>
             <li onclick=hideSidebar()><a href="#footer">Contact</a></li>
-          </ul>
+          </ul> -->
 
           <!-- original nav below -->
-
+<!-- 
           <ul class="nav-items">
             <li class="hideOnMobile"><a href="#home">Home</a></li>
             <li class="hideOnMobile"><a href="#my-skills">My Skills</a></li>
@@ -40,6 +41,31 @@
 
           
         </div>
+      </nav> -->
+      <nav>
+        <div class="nav-container">
+          <div class="navbar">
+              <div class="logo"><a href="#home">Mursalin.</a></div>
+              <ul class="links">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#my-skills">My Skills</a></li>
+                  <li><a href="#message-me">Message Me</a></li>
+                  <li><a href="#footer">Contact</a></li>
+              </ul>
+              <a style="color: #0000ff;" href="" class="action-btn">Download CV</a>
+              <div class="toggle-btn">
+                  <i class="fa-solid fa-bars"></i>
+              </div>
+          </div>
+      </div>
+      
+      <div class="dropdown-menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#my-skills">My Skills</a></li>
+          <li><a href="#message-me">Message Me</a></li>
+          <li><a href="#footer">Contact Me</a></li>
+          <li><a href="" class="action-btn">Download CV</a></li>
+      </div>
       </nav>
 
       <!-- BANNER SECTION -->
@@ -157,7 +183,7 @@
     </footer>
      <!-- FOOTER -->
 
-    <script>
+    <!-- <script>
       function showSidebar(){
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'flex'
@@ -166,6 +192,20 @@
         const sidebar = document.querySelector('.sidebar')
         sidebar.style.display = 'none'
       }
-    </script>
+    </script> -->
+    <script>
+      const toggleBtn = document.querySelector('.toggle-btn')
+      const toggleBtnIcon = document.querySelector('.toggle-btn i')
+      const dropDownMenu = document.querySelector('.dropdown-menu')
+  
+      toggleBtn.onclick = function () {
+          dropDownMenu.classList.toggle('open')
+          const isOpen = dropDownMenu.classList.contains('open')
+  
+          toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars'
+      }
+  </script>
   </body>
 </html>
